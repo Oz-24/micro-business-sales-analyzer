@@ -7,7 +7,7 @@ def generate_raw_sales_data(filename="data/sales_ledger.csv"):
     """Simulates a realistic micro-commerce transaction ledger."""
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
-    # Set seed for reproducible matrix data generation
+    # Set a fixed seed to guarantee replicable matrix outputs.
     np.random.seed(24)
 
     items = [
